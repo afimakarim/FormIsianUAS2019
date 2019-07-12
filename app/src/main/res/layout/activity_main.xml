@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Form Isian UAS 2019"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_margin="20dp"
+        android:fontFamily="monospace"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="NIK"
+            android:textAlignment="textStart"
+            android:textSize="20dp"
+            android:fontFamily="monospace"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nik"
+            android:layout_marginLeft="75dp"
+            android:layout_marginRight="1dp"
+            android:textSize="20dp"
+            android:fontFamily="monospace"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Nama"
+            android:textAlignment="textStart"
+            android:textSize="20dp"
+            android:fontFamily="monospace"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nama"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="1dp"
+            android:textSize="20dp"
+            android:fontFamily="monospace"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Kelas"
+            android:textAlignment="textStart"
+            android:textSize="20dp"
+            android:fontFamily="monospace"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/kelas"></Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Jam"
+            android:textAlignment="textStart"
+            android:textSize="20dp"
+            android:fontFamily="monospace"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/jam"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="1dp"
+            android:textSize="20dp"
+            android:fontFamily="monospace"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/simpan"
+            android:layout_width="134dp"
+            android:background="#00FF00"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:text="SIMPAN" />
+
+        <Button
+            android:id="@+id/tampil"
+            android:layout_width="155dp"
+            android:background="#FFFF00"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            android:text="TAMPIL" />
+    </RelativeLayout>
+</LinearLayout>
